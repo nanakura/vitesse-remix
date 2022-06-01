@@ -14,6 +14,7 @@ module.exports = {
     return {
       ...config,
       plugins: [
+        ...config.plugins,
         require('unplugin-auto-import/esbuild')({
           imports: [
             'react',
@@ -23,8 +24,7 @@ module.exports = {
             },
           ],
           dts: true,
-        }),
-        ...config.plugins
+        })
       ],
     };
   },
