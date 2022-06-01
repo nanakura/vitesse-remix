@@ -11,10 +11,14 @@ import {
 import type { LinksFunction } from "@remix-run/node"; // or "@remix-run/cloudflare"
 
 import styles from "./styles/uno.css";
+import mainstyles from "./styles/main.css";
 import Footer from "./components/Footer";
 
 export const links: LinksFunction = () => {
-  return [{ rel: "stylesheet", href: styles }];
+  return [
+    { rel: "stylesheet", href: styles },
+    { rel: "stylesheet", href: mainstyles }
+  ];
 };
 
 export const meta: MetaFunction = () => ({
