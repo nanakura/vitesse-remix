@@ -14,6 +14,7 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@netlify/functions": "^1.0.0",
     "@remix-run/netlify": "^1.5.1",
     "@remix-run/node": "^1.5.1",
     "@remix-run/react": "^1.5.1",
