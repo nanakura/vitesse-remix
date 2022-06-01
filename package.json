@@ -3,26 +3,44 @@
   "private": true,
   "sideEffects": false,
   "scripts": {
-    "build": "remix build",
-    "dev": "remix dev",
-    "start": "remix-serve build"
+    "dev": "run-p dev:*",
+    "build": "run-s build:*",
+    "start": "remix-serve build",
+    "build:css": "npm run generate:css -- --minify",
+    "build:remix": "remix build",
+    "dev:css": "npm run generate:css -- --watch",
+    "dev:remix": "remix dev",
+    "generate:css": "unocss \"app/**/*.tsx\" -c unocss.config.ts -o ./app/styles/uno.css"
   },
   "dependencies": {
     "@remix-run/node": "^1.5.1",
     "@remix-run/react": "^1.5.1",
     "@remix-run/serve": "^1.5.1",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "usehooks-ts": "^2.5.4",
+    "windicss": "^3.5.4"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^0.25.0",
+    "@iconify-json/carbon": "^1.1.5",
     "@remix-run/dev": "^1.5.1",
     "@remix-run/eslint-config": "^1.5.1",
+    "@testing-library/react": "^13.3.0",
     "@types/react": "^17.0.45",
     "@types/react-dom": "^17.0.17",
+    "@unocss/cli": "^0.37.1",
+    "autoprefixer": "^10.4.7",
     "eslint": "^8.15.0",
-    "typescript": "^4.6.4"
+    "npm-run-all": "^4.1.5",
+    "typescript": "^4.6.4",
+    "unocss": "^0.37.1",
+    "unplugin-auto-import": "^0.8.6"
   },
   "engines": {
     "node": ">=14"
+  },
+  "eslintConfig": {
+    "extends": "@antfu"
   }
 }
