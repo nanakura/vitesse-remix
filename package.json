@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "run-p dev:*",
     "build": "run-s build:*",
-    "start": "remix-serve build",
+    "start": "cross-env NODE_ENV=production netlify dev",
     "build:css": "npm run generate:css",
     "build:remix": "remix build",
     "dev:css": "npm run generate:css -- --watch",
@@ -14,9 +14,11 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@remix-run/netlify": "^1.5.1",
     "@remix-run/node": "^1.5.1",
     "@remix-run/react": "^1.5.1",
     "@remix-run/serve": "^1.5.1",
+    "cross-env": "^7.0.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "usehooks-ts": "^2.5.4"

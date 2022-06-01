@@ -7,3 +7,4 @@ node_modules
 /.vscode
 pnpm-lock.yaml
 app/styles/uno.css
+/.netlify
