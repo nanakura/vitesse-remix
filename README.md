@@ -1,53 +1,63 @@
-# Welcome to Remix!
+<p align="center">
+<img src="https://user-images.githubusercontent.com/11247099/140462375-7b7ac4db-35b7-453c-8a05-13d8d20282c4.png" width="600"/>
+</p>
 
-- [Remix Docs](https://remix.run/docs)
+<h2 align="center">
+<a href="https://github.com/antfu/vitesse">Vitesse</a> for Remix.Run
+</h2><br>
 
-## Development
+<pre align="center">
+🧪 Working in Progress
+</pre>
 
-From your terminal:
+<p align="center">
+<br>
+<a href="https://vitesse-nuxt3.netlify.app/">🖥 Online Preview</a>
+<br><br>
+<a href="https://stackblitz.com/github/antfu/vitesse-nuxt3"><img src="https://developer.stackblitz.com/img/open_in_stackblitz.svg" alt=""></a>
+</p>
 
-```sh
-npm run dev
-```
+## Features
 
-This starts your app in development mode, rebuilding assets on file changes.
+- [Remix.Run](https://remix.run/) - A full stack web framework that lets you focus on the user interface and work back through web fundamentals to deliver a fast, slick, and resilient user experience that deploys to any Node.js server and even non-Node.js environments at the edge like Cloudflare Workers.
 
-## Deployment
+- 🎨 [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
 
-First, build your app for production:
+- 😃 Use icons from any icon sets in Pure CSS, powered by [UnoCSS](https://github.com/antfu/unocss)
 
-```sh
-npm run build
-```
+- 📥 APIs auto importing - for Composition API, VueUse and custom composables.
 
-Then run the app in production mode:
+- 🏎 Zero-config cloud functions and deploy
 
-```sh
-npm start
-```
+- 🦾 TypeScript, of course
 
-Now you'll need to pick a host to deploy it to.
+## IDE
 
-### DIY
+We recommend using [VS Code](https://code.visualstudio.com/) with [Volar](https://github.com/johnsoncodehk/volar) to get the best experience (You might want to disable Vetur if you have it).
 
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
+## Variations
 
-Make sure to deploy the output of `remix build`
+- [vitesse](https://github.com/antfu/vitesse) - Opinionated Vite Starter Template
+- [vitesse-lite](https://github.com/antfu/vitesse-lite) - Lightweight version of Vitesse
+- [vitesse-nuxt-bridge](https://github.com/antfu/vitesse-nuxt-bridge) - Vitesse for Nuxt 2 with Bridge
+- [vitesse-webext](https://github.com/antfu/vitesse-webext) - WebExtension Vite starter template
 
-- `build/`
-- `public/build/`
+## Try it now!
 
-### Using a Template
+### Online
 
-When you ran `npx create-remix@latest` there were a few choices for hosting. You can run that again to create a new project, then copy over your `app/` folder to the new project that's pre-configured for your target server.
+<a href="https://stackblitz.com/github/antfu/vitesse-nuxt3"><img src="https://developer.stackblitz.com/img/open_in_stackblitz.svg" alt=""></a>
 
-```sh
-cd ..
-# create a new project, and pick a pre-configured host
-npx create-remix@latest
-cd my-new-remix-app
-# remove the new project's app (not the old one!)
-rm -rf app
-# copy your app over
-cp -R ../my-old-remix-app/app app
+### GitHub Template
+
+[Create a repo from this template on GitHub](https://github.com/antfu/vitesse-nuxt3/generate).
+
+### Clone to local
+
+If you prefer to do it manually with the cleaner git history
+
+```bash
+npx degit nanakura/vitesse-remix my-remix-app
+cd my-remix-app
+pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
