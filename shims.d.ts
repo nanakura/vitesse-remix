@@ -1,4 +1,4 @@
-import { AttributifyAttributes } from 'windicss/types/jsx'
+import type { AttributifyAttributes } from '@unocss/preset-attributify'
 
 declare module 'react' {
   interface HTMLAttributes<T> extends AttributifyAttributes {}
