@@ -6,7 +6,7 @@
     "dev": "run-p dev:*",
     "build": "run-s build:*",
     "start": "remix-serve build",
-    "build:css": "npm run generate:css -- --minify",
+    "build:css": "npm run generate:css",
     "build:remix": "remix build",
     "dev:css": "npm run generate:css -- --watch",
     "dev:remix": "remix dev",
