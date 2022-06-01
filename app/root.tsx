@@ -13,9 +13,11 @@ import type { LinksFunction } from "@remix-run/node"; // or "@remix-run/cloudfla
 import styles from "./styles/uno.css";
 import mainstyles from "./styles/main.css";
 import Footer from "./components/Footer";
+import favicon from '../public/favicon.svg';
 
 export const links: LinksFunction = () => {
   return [
+    { rel: "icon", href: favicon, type: "image/svg+xml" },
     { rel: "stylesheet", href: styles },
     { rel: "stylesheet", href: mainstyles }
   ];
@@ -42,19 +44,7 @@ export default function App() {
           <Footer/>
         </main>
         <ScrollRestoration />
-        <Scripts as={
-          `(function() {
-            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-            const setting = localStorage.getItem('usehooks-ts-dark-mode')
-              ? localStorage.getItem('usehooks-ts-dark-mode') === 'true'
-                ? 'dark'
-                : 'light'
-              : 'auto'
-      
-            if (setting === 'dark' || (prefersDark && setting !== 'light'))
-              document.documentElement.classList.toggle('dark', true)
-          })()`
-        }/>
+        <Scripts/>
         <LiveReload />
       </body>
     </html>
