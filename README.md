@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://user-images.githubusercontent.com/11247099/140462375-7b7ac4db-35b7-453c-8a05-13d8d20282c4.png" width="600"/>
+<img src="https://user-images.githubusercontent.com/11247099/111864893-a457fd00-899e-11eb-9f05-f4b88987541d.png" width="600"/>
 </p>
 
 <h2 align="center">
@@ -25,7 +25,7 @@
 
 - 😃 Use icons from any icon sets in Pure CSS, powered by [UnoCSS](https://github.com/antfu/unocss)
 
-- 📥 APIs auto importing - for Composition API, VueUse and custom composables.
+- ~~📥 APIs auto importing - for Composition API, VueUse and custom composables.~~
 
 - 🏎 Zero-config cloud functions and deploy
 
