@@ -1,5 +1,14 @@
+import type { MetaFunction } from "@remix-run/node";
 import { useNavigate } from "@remix-run/react";
 import { useRef } from "react";
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Vitesse-Remix" },
+    { name: "description", content: "Welcome to Remix!" },
+  ];
+};
+
 
 export default function Index() {
   const name = useRef<HTMLInputElement>(null)
@@ -44,3 +53,4 @@ export default function Index() {
     </div>
   );
 }
+

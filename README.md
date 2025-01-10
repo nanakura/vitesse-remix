@@ -1,70 +1,40 @@
-<p align="center">
-<img src="https://user-images.githubusercontent.com/11247099/111864893-a457fd00-899e-11eb-9f05-f4b88987541d.png" width="600"/>
-</p>
+# Welcome to Remix!
 
-<h2 align="center">
-<a href="https://github.com/antfu/vitesse">Vitesse</a> for Remix.Run
-</h2><br>
+- 📖 [Remix docs](https://remix.run/docs)
 
+## Development
 
-<p align="center">
-<br>
-<a href="https://vitesse-remix.netlify.app/">🖥 Online Preview</a>
+Run the dev server:
 
-## Features
-
-- [Remix.Run](https://remix.run/) - A full stack web framework.
-
-- 🎨 [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
-
-- 😃 Use icons from any icon sets in Pure CSS, powered by [UnoCSS](https://github.com/antfu/unocss)
-
-- ✅ Use [Vitest](http://vitest.dev/) for unit and components testing
-
-- 🏎 Zero-config cloud functions and deploy
-
-- 🦾 TypeScript, of course
-
-- ☁️ Deploy on Netlify, zero-config
-
-
-<br>
-
-See [Vitesse](https://github.com/antfu/vitesse) for full featureset.
-
-## Dropped Features from [Vitesse](https://github.com/antfu/vitesse)
-
-- ~~📥 APIs auto importing - for Composition API, VueUse and custom composables. (bugs i can't fix)~~
-- ~~i18n~~
-- ~~Layouts~~
-- ~~SSG~~
-- ~~PWA~~
-- ~~Markdown~~
-
-## IDE
-
-We recommend using [VS Code](https://code.visualstudio.com/) with [Volar](https://github.com/johnsoncodehk/volar) to get the best experience (You might want to disable Vetur if you have it).
-
-## Variations
-
-- [vitesse](https://github.com/antfu/vitesse) - Opinionated Vite Starter Template
-- [vitesse-lite](https://github.com/antfu/vitesse-lite) - Lightweight version of Vitesse
-- [vitesse-nuxt-bridge](https://github.com/antfu/vitesse-nuxt-bridge) - Vitesse for Nuxt 2 with Bridge
-- [vitesse-webext](https://github.com/antfu/vitesse-webext) - WebExtension Vite starter template
-
-## Try it now!
-
-
-### GitHub Template
-
-[Create a repo from this template on GitHub](https://github.com/nanakura/vitesse-remix/generate).
-
-### Clone to local
-
-If you prefer to do it manually with the cleaner git history
-
-```bash
-npx degit nanakura/vitesse-remix my-remix-app
-cd my-remix-app
-pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
+```shellscript
+npm run dev
 ```
+
+## Deployment
+
+First, build your app for production:
+
+```sh
+npm run build
+```
+
+Then run the app in production mode:
+
+```sh
+npm start
+```
+
+Now you'll need to pick a host to deploy it to.
+
+### DIY
+
+If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
+
+Make sure to deploy the output of `npm run build`
+
+- `build/server`
+- `build/client`
+
+## Styling
+
+This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
